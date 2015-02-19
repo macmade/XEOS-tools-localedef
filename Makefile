@@ -59,45 +59,17 @@
 
 # $Id$
 
-include ../../Makefile-Config.mk
+include make/Config.mk
+include make/Targets.mk
 
-#-------------------------------------------------------------------------------
-# Display
-#-------------------------------------------------------------------------------
+PROMPT  := XEOS TOOLS LOCALEDEF
+DEPS    := 
+FILES   := 
 
-PROMPT  := "    ["$(COLOR_GREEN)" XEOS "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" TOOL "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" LDEF "$(COLOR_NONE)"]>           *** "
-
-#-------------------------------------------------------------------------------
-# Files
-#-------------------------------------------------------------------------------
-
-_FILES  = $(call XEOS_FUNC_C_TOOLS_OBJ,$(PATH_TOOLS_LOCALEDEF))
-
-#-------------------------------------------------------------------------------
-# Built-in targets
-#-------------------------------------------------------------------------------
-
-# Declaration for phony targets, to avoid problems with local files
-.PHONY: all localedef clean
-
-#-------------------------------------------------------------------------------
-# Phony targets
-#-------------------------------------------------------------------------------
-
-# Build the full project
-all: localedef
+all:
 	
 	@:
 	
-# Links the executable
-localedef: $(_FILES)
+clean: obj-clean
 	
-	@$(PRINT) $(PROMPT)"Linking executable: "$(COLOR_GRAY)"$(notdir $@)"$(COLOR_NONE)
-	@$(TOOLS_CC) -o $(PATH_BUILD_TOOLS_BIN)$@ $^
-
-# Cleans the build files
-clean:
-	
-	@$(PRINT) $(PROMPT)"Cleaning all build files"
-	@$(RM) $(ARGS_RM) $(PATH_BUILD_TOOLS_OBJ)$(subst $(PATH_TOOLS),,$(PATH_TOOLS_LOCALEDEF))
-	@$(RM) $(ARGS_RM) $(PATH_BUILD_TOOLS_BIN)localedef
+	@:
