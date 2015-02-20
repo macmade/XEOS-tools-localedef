@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include "include/localedef.h"
+#include "localedef.h"
 
 void localedef_help( void )
 {

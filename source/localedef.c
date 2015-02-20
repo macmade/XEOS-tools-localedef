@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include "include/localedef.h"
+#include "localedef.h"
 
 int main( int argc, const char * argv[] )
 {
