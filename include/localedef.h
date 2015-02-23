@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __TOOLS_LOCALEDEF_H__
-#define __TOOLS_LOCALEDEF_H__
+#ifndef TOOLS_LOCALEDEF_H
+#define TOOLS_LOCALEDEF_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -85,4 +85,4 @@ void localedef_help( void );
 }
 #endif
 
-#endif /* __TOOLS_LOCALEDEF_H__ */
+#endif /* TOOLS_LOCALEDEF_H */
