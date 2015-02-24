@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include "localedef.h"
 
 void localedef_help( void )

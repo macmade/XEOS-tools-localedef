@@ -59,14 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
-/*!
- * @header          localedef.h
- * @author          Jean-David Gadina
- * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
- */
-
 #ifndef TOOLS_LOCALEDEF_H
 #define TOOLS_LOCALEDEF_H
 
